@@ -16,9 +16,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -45,6 +45,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\SoftUni\my-demo-projects\demo_1\customer_app\customer_app\accounts" />
       <recent name="D:\SoftUni\SoftUni-courses\Python Web Basics\my_demo_projects\demo_1\customer_app\customer_app" />
     </key>
   </component>
