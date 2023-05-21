@@ -12,6 +12,10 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 import os.path
 from pathlib import Path
 
+import sys
+print(sys.version)
+print(sys.path)
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -39,6 +43,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'customer_app.accounts',
+
+    'django_filters'
+
+
 
 ]
 
