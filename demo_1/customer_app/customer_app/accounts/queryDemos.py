@@ -41,6 +41,9 @@ ballOrders = firstCustomer.order_set.filter(product__name="Ball").count()
 # Returns total count for each product orderd
 allOrders = {}
 
+# Change name of the customer
+Customer.objects.filter(pk=8).update(name="dada")
+
 for order in firstCustomer.order_set.all():
     if order.product.name in allOrders:
         allOrders[order.product.name] += 1
