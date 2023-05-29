@@ -28,9 +28,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-q6ulyps%s=-dh!-&9jjs+dqckvr-3a!*-*c=640&&tnk17y=bq'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ostrev-demo-1.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -165,14 +165,14 @@ EMAIL_HOST_USER = '**********'
 EMAIL_HOST_PASSWORD = '**********'
 
 # S3  BUCKETS CONFIG
-AWS_ACCESS_KEY_ID = 'AKIAR77ZH4IZJURUBN5A'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'ostrev-app-bucket'
-
-AWS_S3_FILE_OVERWRITE = False
-AWS_DEFAULT_ACL = None
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+# AWS_ACCESS_KEY_ID = 'AKIAR77ZH4IZJURUBN5A'
+# AWS_SECRET_ACCESS_KEY = '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'
+# AWS_STORAGE_BUCKET_NAME = 'ostrev-app-bucket'
+#
+# AWS_S3_FILE_OVERWRITE = False
+# AWS_DEFAULT_ACL = None
+# DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+# STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 
 # docker run -p 5432:5432 -e POSTGRES_USER=masterUsername -e POSTGRES_PASSWORD=Ilovepoli04* -d -v my-postgres-data:/var/lib/postgresql/data --name custom-name postgres:latest
