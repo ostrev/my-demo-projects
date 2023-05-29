@@ -168,7 +168,7 @@ def updateOrder(request, pk):
             return redirect('/')
 
     context = {'form': form}
-    return render(request, 'accounts/order_form.html', context)
+    return render(request, 'accounts/order_update_form.html', context)
 
 
 @login_required(login_url='login')

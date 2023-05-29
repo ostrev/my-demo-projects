@@ -33,7 +33,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/SoftUni/my-demo-projects/docker-compose-example.yml",
+    "last_opened_file_path": "D:/SoftUni/my-demo-projects/demo_1/customer_app/templates/accounts",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -49,6 +49,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\SoftUni\my-demo-projects\demo_1\customer_app\templates\accounts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\SoftUni\my-demo-projects\demo_1\customer_app\customer_app\accounts" />
       <recent name="D:\SoftUni\SoftUni-courses\Python Web Basics\my_demo_projects\demo_1\customer_app\customer_app" />
