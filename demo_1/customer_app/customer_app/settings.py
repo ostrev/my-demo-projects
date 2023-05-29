@@ -45,7 +45,10 @@ INSTALLED_APPS = [
 
     'customer_app.accounts.apps.AccountsConfig',
 
-    'django_filters'
+    'django_filters',
+
+    'storages',
+
 
 
 
@@ -97,9 +100,9 @@ DATABASES = {
 #     "default": {
 #         "ENGINE": "django.db.backends.postgresql_psycopg2",
 #         "NAME": "account-app",
-#         "USER": "*********",
-#         "PASSWORD": "**********",
-#         "HOST": "*********",
+#         "USER": "masterUsername",
+#         "PASSWORD": "Ilovepoli04*",
+#         "HOST": "demo1.cilstkaubhcu.eu-north-1.rds.amazonaws.com",
 #         "PORT": "5432",
 #     }
 # }
@@ -138,7 +141,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 MEDIA_URL = '/images/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
@@ -161,5 +164,50 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = '**********'
 EMAIL_HOST_PASSWORD = '**********'
 
+# S3  BUCKETS CONFIG
+AWS_ACCESS_KEY_ID = 'AKIAR77ZH4IZJURUBN5A'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'ostrev-app-bucket'
+
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
 
 # docker run -p 5432:5432 -e POSTGRES_USER=masterUsername -e POSTGRES_PASSWORD=Ilovepoli04* -d -v my-postgres-data:/var/lib/postgresql/data --name custom-name postgres:latest
+
+
+# CORS Configuration S3
+'''
+<?xml version="1.0" encoding="UTF"?>
+<CORSConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+<CORSRule>
+    <AllowedOrigin>*</AllowedOrigin>
+    <AllowedMethod>GET</AllowedMethod>
+    <AllowedMethod>POST</AllowedMethod>
+    <AllowedMethod>PUT</AllowedMethod>
+    <AllowedHeader>*</AllowedHeader>
+</CORSRule>
+</CORSConfiguration>
+
+
+'''
+'''
+[
+    {
+        "AllowedHeaders": [
+            "*"
+        ],
+        "AllowedMethods": [
+            "PUT",
+            "POST",
+            "DELETE"
+        ],
+        "AllowedOrigins": [
+            "*"
+        ]
+    }
+]
+
+'''
