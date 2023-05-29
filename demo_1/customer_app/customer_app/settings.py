@@ -168,8 +168,8 @@ EMAIL_HOST_USER = '**********'
 EMAIL_HOST_PASSWORD = '**********'
 
 # S3  BUCKETS CONFIG
-# AWS_ACCESS_KEY_ID = 'AKIAR77ZH4IZJURUBN5A'
-# AWS_SECRET_ACCESS_KEY = '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'
+# AWS_ACCESS_KEY_ID = '****'
+# AWS_SECRET_ACCESS_KEY = '****'
 # AWS_STORAGE_BUCKET_NAME = 'ostrev-app-bucket'
 #
 # AWS_S3_FILE_OVERWRITE = False
@@ -178,7 +178,7 @@ EMAIL_HOST_PASSWORD = '**********'
 # STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 
-# docker run -p 5432:5432 -e POSTGRES_USER=masterUsername -e POSTGRES_PASSWORD=Ilovepoli04* -d -v my-postgres-data:/var/lib/postgresql/data --name custom-name postgres:latest
+# docker run -p 5432:5432 -e POSTGRES_USER=masterUsername -e POSTGRES_PASSWORD=**** -d -v my-postgres-data:/var/lib/postgresql/data --name custom-name postgres:latest
 
 
 # CORS Configuration S3
